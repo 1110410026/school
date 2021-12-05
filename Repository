@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    int a, b, c;
+    int s;
+    cout << "請輸入兩數"<<"a:";
+    cin >> a;
+    cout << "b:";
+    cin >> b;
+    s = a * b;
+
+    while (b != 0)
+    {
+        c = a % b;
+        a = b;
+        b = c;
+    }
+
+    cout << "最大公因數:" << a;
+    cout << "最小公倍數:" << s / a;
+
+
+
+
+    }
